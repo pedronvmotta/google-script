@@ -1,7 +1,7 @@
-// ============================================================
-// SCRIPT 2 — Descobrir external_id dos campos + listar items existentes
-// Antes de rodar, cole o APP_ID abaixo.
-// ============================================================
+  // ============================================================
+  // SCRIPT 2 — Descobrir external_id dos campos + listar items existentes
+  // Antes de rodar, cole o APP_ID abaixo.
+  // ============================================================
 const APP_ID = 0; // ← Cole aqui o número que veio do Script 1
 
 function descobrirCamposEItems() {
