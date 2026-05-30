@@ -4,7 +4,7 @@
 // APP_ID já está declarado no Script 2 — compartilhado entre arquivos do projeto.
 // ============================================================
 const SHEET_NAME = "Página1";
-const COL_ITEM_ID = 1;   // Coluna A — vazia = criar; preenchida = atualizar
+const COL_ITEM_ID = 27;   // Coluna A — vazia = criar; preenchida = atualizar
 const HEADER_ROWS = 1;
 
 // 🔧 MAPEAMENTO COLUNA → external_id do campo no Podio
@@ -51,14 +51,14 @@ function processarLinha(sheet, row, token) {
   try {
     if (itemId) {
       atualizarItem(itemId, fields, token);
-      Logger.log("🔄 Linha " + row + ": item " + itemId + " atualizado → " + JSON.stringify(fields));
+      Logger.log(" Linha " + row + ": item " + itemId + " atualizado → " + JSON.stringify(fields));
     } else {
       const novoItemId = criarItem(fields, token);
       sheet.getRange(row, COL_ITEM_ID).setValue(novoItemId);
-      Logger.log("➕ Linha " + row + ": item criado " + novoItemId + " → " + JSON.stringify(fields));
+      Logger.log("Linha " + row + ": item criado " + novoItemId + " → " + JSON.stringify(fields));
     }
   } catch (err) {
-    Logger.log("❌ Linha " + row + ": " + err.message);
+    Logger.log("Linha " + row + ": " + err.message);
   }
 }
 
