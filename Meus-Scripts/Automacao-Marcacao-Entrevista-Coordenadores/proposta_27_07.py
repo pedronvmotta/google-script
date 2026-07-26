@@ -11,7 +11,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 BASE = Path(__file__).parent
 ALLOC = BASE / "Entrevistas com Coordena - Alocações - Horários (10).csv"
-CAND = BASE / "E.C Candidatos - disponibilidade  (respostas) - Respostas ao formulário 1 (2).csv"
+CAND = BASE / "E.C Candidatos - disponibilidade  (respostas) - Respostas ao formulário 1 (3).csv"
 COORD = BASE / "Coordenas - disponibilidade (respostas) - Respostas ao formulário 1 (1).csv"
 
 DIAS = ["14/07","15/07","16/07","17/07","20/07","21/07","22/07","23/07","24/07","27/07","28/07","29/07"]
