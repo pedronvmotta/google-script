@@ -14,7 +14,11 @@
       "Bash(xxd)",
       "Bash(awk *)",
       "Bash(rm *)",
-      "Bash(sed 's/[[:space:]]*$//')"
+      "Bash(sed 's/[[:space:]]*$//')",
+      "Bash(indispon)",
+      "Bash(28_07)",
+      "Bash(sophia)",
+      "Bash(tiburcio\" -SimpleMatch)"
     ]
   }
 }
