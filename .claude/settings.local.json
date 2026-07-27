@@ -13,7 +13,8 @@
       "Bash(python *)",
       "Bash(xxd)",
       "Bash(awk *)",
-      "Bash(rm *)"
+      "Bash(rm *)",
+      "Bash(sed 's/[[:space:]]*$//')"
     ]
   }
 }
