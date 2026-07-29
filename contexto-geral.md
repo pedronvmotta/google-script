@@ -219,7 +219,35 @@ Estrutura das colunas dos dois CSVs (idêntica):
 
 ---
 
-## 10. Divisão de responsabilidade entre os arquivos de contexto
+## 10. Fase 4 — Entrevista com Diretoria Executiva (DE)
+
+Formato **1x1x1**: **DE + Observador + Candidato**. A **coordenação do candidato não importa** (ao contrário da Fase 3 — qualquer DE pode entrevistar qualquer candidato).
+
+Arquivos em `Meus-Scripts/Automacao-Marcacao-Entrevista-Com-DE/`.
+
+### Regra dura — Observadora mulher quando candidata mulher + DE homem
+
+Se o **candidato for mulher** e o **DE for homem**, o **Observador tem que ser mulher**. Sem exceção. É proteção institucional pra candidata. Vale **apenas pra Fase 4**.
+
+Como aplicar:
+- Casos que exigem obs mulher: **candidata M + DE H**.
+- Casos livres: candidato H com qualquer DE; candidata M + DE mulher (Karolina).
+- Ao cruzar disponibilidade, reservar as observadoras mulheres primeiro pros slots que exigem obs M, antes de encaixar homens.
+- Se nenhuma obs mulher couber num slot que exija, **sinalizar o conflito** e propor trocar o horário da candidata — nunca quebrar a regra em silêncio.
+
+### Limites diários por Diretor (não negociáveis)
+
+| DE | Limite/dia | Slots seguidos? |
+|---|---:|---|
+| Matheus Xavier | 4 | ❌ não pode |
+| Enzo Marmello | 4 | ✅ ok |
+| Eric Heubel | 4 | ✅ ok |
+| Rafael Leal | 6 | ✅ ok |
+| Karolina Cristina | sem limite | ✅ ok |
+
+---
+
+## 11. Divisão de responsabilidade entre os arquivos de contexto
 
 | Tipo de info | Arquivo |
 |---|---|

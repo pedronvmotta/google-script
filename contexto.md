@@ -1,5 +1,41 @@
 # Contexto do Projeto PAME
 
+## Fase 4 — Entrevista com Diretoria Executiva (paralela ao fim da Fase 3)
+
+Arquivos em `Meus-Scripts/Automacao-Marcacao-Entrevista-Com-DE/`:
+- `Canidatos DE - disponibilidade (respostas) - Respostas ao formulário 1.csv`
+- `DE - disponibilidade (respostas) - Respostas ao formulário 1.csv`
+- `Observadores - disponibilidade (respostas) - Respostas ao formulário 1.csv`
+- `Entrevistas com DE- Alocações - Horários (N).csv` — planilha oficial de marcação (usar o `(N)` mais alto)
+
+Formato **1x1x1**: DE + Observador + Candidato por slot. Coordenação do candidato **não importa** (qualquer DE atende qualquer candidato).
+
+### Regra dura — Observadora mulher quando candidata mulher + DE homem
+
+**Candidata mulher + DE homem → Observador tem que ser mulher.** Sem exceção. Proteção institucional pra candidata. Estabelecida em 2026-07-29 pelo Pedro.
+
+Fluxo de aplicação:
+1. Classificar gênero de candidato, DE e observador antes de propor.
+2. Reservar as observadoras mulheres primeiro pros slots com candidata M + DE H.
+3. Alocar observadores homens só em slots livres (candidato H, ou candidata M + Karolina).
+4. Se não houver obs mulher disponível num slot que exija, **sinalizar o conflito** e propor trocar o horário da candidata. Não quebrar a regra em silêncio.
+
+### Limites diários por Diretor
+
+| DE | Limite/dia | Slots seguidos? |
+|---|---:|---|
+| Matheus Xavier | 4 | ❌ |
+| Enzo Marmello | 4 | ✅ |
+| Eric Heubel | 4 | ✅ |
+| Rafael Leal | 6 | ✅ |
+| Karolina Cristina | sem limite | ✅ |
+
+### Exceções pontuais
+
+- **Flávio Magyar Ortolan Pereira** — SÓ faz entrevista da Fase 4 no dia **07/08/2026**. Nunca sugerir outra data.
+
+---
+
 ## Fase atual — Fase 3: Entrevista com Coordenador (a partir de 2026-07-14)
 
 O PAME entrou na **Fase 3: Entrevista com Coordenador (Coordena)**. Formato **1x1 (individual)** — 1 candidato ↔ 1 Coordena por slot. Descrição conceitual detalhada em `contexto-geral.md` § 9.
