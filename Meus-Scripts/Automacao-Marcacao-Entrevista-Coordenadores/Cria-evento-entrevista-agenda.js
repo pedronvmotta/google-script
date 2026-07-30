@@ -22,15 +22,16 @@
 //   E  Coordena  - Email
 //   F  Observador - Nome
 //   G  Observador - Email
-//   H  Candidato - Nome
-//   I  Candidato - Numero
-//   J  Candidato - Coordenacao
-//   K  Status do evento    (Atualizar / Deletar)
-//   L  ID do evento        (preenchido apos criar/atualizar)
-//   M  Mensagem enviada
-//   N  Candidato confirmado
-//   O  Entrevista ocorreu
-//   P  Candidato - Email   (usado para adicionar o candidato como convidado)
+//   H  Observador - Numero de telefone
+//   I  Candidato - Nome
+//   J  Candidato - Numero
+//   K  Candidato - Coordenacao
+//   L  Status do evento    (Atualizar / Deletar)
+//   M  ID do evento        (preenchido apos criar/atualizar)
+//   N  Mensagem enviada
+//   O  Candidato confirmado
+//   P  Entrevista ocorreu
+//   Q  Candidato - Email   (usado para adicionar o candidato como convidado)
 
 const CAL_ID = "8eb0b6a9bea03527a7b8070510d4cc3c9aa941a577a598d599dc84f8e2e0796d@group.calendar.google.com";
 const TZ = "America/Sao_Paulo";
@@ -39,7 +40,7 @@ function onOpen(e){
   try {
     SpreadsheetApp.getUi()
       .createMenu("Agenda")
-      .addItem("Jogar entrevistas na agenda","envioAgendaEntrevistas")
+      .addItem("Jogar/cancelar entrevistas na agenda","envioAgendaEntrevistas")
       .addToUi();
   } catch(err){
     Logger.log("onOpen sem UI disponivel: " + err);
@@ -137,12 +138,13 @@ function envioAgendaEntrevistas() {
     const coordenaEmail  = values[i][4];   // E
     const observadorNome = values[i][5];   // F
     const observadorEmail= values[i][6];   // G
-    const candidatoNome  = values[i][7];   // H
-    const candidatoNum   = values[i][8];   // I
-    const candidatoCoord = values[i][9];   // J
-    const validation     = values[i][10];  // K
-    const exists         = values[i][11];  // L
-    const candidatoEmail = values[i][15];  // P
+    const observadorNum  = values[i][7];   // H
+    const candidatoNome  = values[i][8];   // I
+    const candidatoNum   = values[i][9];   // J
+    const candidatoCoord = values[i][10];  // K
+    const validation     = values[i][11];  // L
+    const exists         = values[i][12];  // M
+    const candidatoEmail = values[i][16];  // Q
 
     if (validation === "Atualizar"){
       if (dia === "" || hora === "" || candidatoNome === "" || coordenaEmail === ""){
@@ -158,14 +160,12 @@ function envioAgendaEntrevistas() {
       if (candidatoEmail)  attendees.push({ email: candidatoEmail });
 
       const descricao =
-        (observadorNome ? "Observador(a): " + observadorNome + " (" + observadorEmail + ")\n" : "") +
+        "Número do(a) observador(a):" + " " + (observadorNum ?  observadorNum : "") +
         "\nCandidato(a): " + candidatoNome + "\n" +
-        "Numero: " + candidatoNum + "\n" +
-        "Coordenacao de interesse: " + candidatoCoord + "\n\n" +
-        "Roteiro da dinamica: " + linkDoAnexo + "\n\n" +
-        "Case base da entrevista: " + linkDoCase;
+        "Número do candidato: " + candidatoNum + "\n" +
+        "Coordenação de interesse: " + candidatoCoord + "\n\n"
 
-      const titulo = "Entrevista com Coordena - PAME";
+      const titulo = "Entrevista com DE - PAME";
 
       const eventBody = {
         summary: titulo,
@@ -206,14 +206,14 @@ function envioAgendaEntrevistas() {
           conferenceDataVersion: 1,
           sendUpdates: "all"
         });
-        sheet.getRange(i+1, 12).setValue(event.id); // coluna L
+        sheet.getRange(i+1, 13).setValue(event.id); // coluna M
         Logger.log("Novo evento criado: " + candidatoNome + " (Meet: " + (event.hangoutLink || "-") + ")");
       }
 
       // Abre o Meet pra qualquer pessoa com o link (sem "pedir para participar").
       abrirAcessoMeet(obterMeetCode(event), i+1);
 
-      sheet.getRange(i+1, 11).setValue("Atualizado"); // coluna K
+      sheet.getRange(i+1, 12).setValue("Atualizado"); // coluna L
     }
 
     else if (validation === "Deletar"){
@@ -223,8 +223,8 @@ function envioAgendaEntrevistas() {
         } catch(err){
           Logger.log("Evento ja nao existia na agenda (linha " + (i+1) + "): " + err);
         }
-        sheet.getRange(i+1, 12).setValue(""); // limpa ID
-        sheet.getRange(i+1, 11).setValue(""); // limpa Status
+        sheet.getRange(i+1, 13).setValue(""); // limpa ID (coluna M)
+        sheet.getRange(i+1, 12).setValue(""); // limpa Status (coluna L)
       }
     }
   }
