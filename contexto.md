@@ -30,6 +30,12 @@ Fluxo de aplicação:
 | Rafael Leal | 6 | ✅ |
 | Karolina Cristina | sem limite | ✅ |
 
+### Pedro Motta — DE de último recurso
+
+Pedro Motta (`pedronaves.20241@poli.ufrj.br`) aparece no CSV `DE - disponibilidade (respostas) - Respostas ao formulário 1 (3).csv` a partir de 03/08/2026 com disponibilidade 04-07/08. **Não é diretor da Fluxo** — é o responsável do PAME e se colocou como reserva pra viabilizar entrevistas.
+
+**Regra:** só marcar Pedro Motta como DE de uma entrevista quando **nenhum dos 5 DEs reais** (Xavier, Enzo, Eric, Leal, Karolina) couber no slot do candidato. "Não couber" = sem disponibilidade **OU** limite diário estourado. Pedro Motta entra por último; qualquer DE real disponível tem prioridade sobre ele.
+
 ### Exceções pontuais
 
 - **Flávio Magyar Ortolan Pereira** — SÓ faz entrevista da Fase 4 no dia **07/08/2026**. Nunca sugerir outra data.

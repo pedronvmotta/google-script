@@ -245,6 +245,10 @@ Como aplicar:
 | Rafael Leal | 6 | ✅ ok |
 | Karolina Cristina | sem limite | ✅ ok |
 
+### Pedro Motta — DE de último recurso
+
+O próprio **Pedro Motta** (responsável do PAME, não é diretor da Fluxo) se auto-inclui no CSV de disponibilidade dos DEs como reserva. Ele **só entra como DE de uma entrevista** quando **nenhum dos 5 DEs reais** (Xavier, Enzo, Eric, Leal, Karolina) tem disponibilidade **e** capacidade (dentro do limite diário) pra atender o slot do candidato. Prioridade dos 5 sempre acima do Pedro.
+
 ---
 
 ## 11. Divisão de responsabilidade entre os arquivos de contexto
