@@ -20,7 +20,9 @@
       "Bash(sophia)",
       "Bash(tiburcio\" -SimpleMatch)",
       "Bash(git -C \"C:\\\\Users\\\\User\\\\Desktop\\\\PAME-REPO\" show HEAD:\"Meus-Scripts/Automacao-Marcacao-Entrevista-Com-DE/Canidatos DE - disponibilidade \\(respostas\\) - Respostas ao formulário 1.csv\")",
-      "Bash(git *)"
+      "Bash(git *)",
+      "Bash(git show *)",
+      "Read(//tmp/**)"
     ]
   }
 }
